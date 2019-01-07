@@ -13,5 +13,12 @@ namespace ComicBookGallery.Controllers
         {
             return View();
         }
+        public ContentResult Detail()
+        {
+            return new ContentResult()
+            {
+                Content = "This is my content in detail action method";
+            };
+        }
     }
 }
